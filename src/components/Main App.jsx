@@ -27,25 +27,30 @@ export default function MainApp(){
             <div className="links">
                 <h3>Find me on:</h3>
                 <div className="inner-links">
-                    {links.map((link, index) => {
-                        const reference = link.link.includes("@gmail.com") 
-                        ?
-                        `mailto:${link.link}` 
-                        :
-                        `${link.link}`;
-                        return(
-                            <a 
-                            href={reference}
-                            key={index}
-                            target='_blank'
-                            rel="noopener noreferrer"
-                            className="link">
-                                <img src={link.icon} alt={link.name} />
-                                <span>{link.name}</span>
+                   {links.map((link, index) => {
+    const reference = link.link.includes("@gmail.com")
+        ? `mailto:${link.link}`
+        : link.link;
 
-                            </a>
-                        )
-                    })}
+    return (
+        <a
+            href={reference || "#"}
+            key={index}
+            target={reference ? "_blank" : undefined}
+            rel={reference ? "noopener noreferrer" : undefined}
+            className={`link ${!reference ? "disabled" : ""}`}
+            onClick={(e) => {
+                if (!reference) {
+                    e.preventDefault();
+                    alert("No link available");
+                }
+            }}
+        >
+            <img src={link.icon} alt={link.name} />
+            <span>{link.name}</span>
+        </a>
+    );
+})}
                 </div>
             </div>
         </section>
