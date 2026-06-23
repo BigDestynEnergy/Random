@@ -5,6 +5,7 @@ import twitterx from "../assets/twitter-x.svg"
 import facebook from "../assets/facebook.svg"
 import bolt from "../assets/lightning-fill.svg"
 import chat from "../assets/chat.svg"
+import sup from "../assets/whatsapp.svg"
 import './Styles.css'
 
 export default function MainApp(){
@@ -13,6 +14,7 @@ export default function MainApp(){
         {name: "Facebook", link: "https://www.facebook.com/profile.php?id=61557103982365&mibextid=ZbWKwL", icon: facebook},
         {name: "Instagram", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         {name: "TikTok", link: "https://www.tiktok.com/@tsogollo?_r=1&_t=ZS-97RpeX1eQdA", icon: tiktok},
+        {name: "WhatsApp", link: "https://wa.me/265998833172", icon: sup},
         {name: "Twitter/X", link: "", icon: twitterx},
         {name: "Comics", link: "https://culturalcomics.ink/app/comic/20/", icon: bolt},
     ]
@@ -52,6 +54,10 @@ export default function MainApp(){
     );
 })}
                 </div>
+            </div>
+
+            <div className="lower">
+                <h2>More coming soon</h2>
             </div>
         </section>
     )
