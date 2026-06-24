@@ -9,7 +9,7 @@ export default function Frameworks(){
     ]
     return(
         <section className="frameworks">
-            <h3 style={{color: "#38bdf8"}}>Almost forgot these frameworks:</h3>
+            <h3 style={{color: "#38bdf8"}}>Almost forgot my babies:</h3>
 
             <div className="skills">
                 {skills.map((skill, index) => {
