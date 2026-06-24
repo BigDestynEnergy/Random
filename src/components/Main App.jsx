@@ -35,7 +35,7 @@ export default function MainApp(){
                 <span>I wanted to subscribe for Linktree and display all my links,</span>
                 
                 <span>but i am a web developer so i made my own</span>
-                <i style={{color: "#ffffff6e"}}>Disclaimer: This is lowkey a portfolio (oops!)</i>
+                <i style={{color: "#ffffff6e"}}>Disclaimer: This is lowkey a portfolio (oo0ps!)</i>
             {modal && (
                 <div className="modal">
                     <span 
