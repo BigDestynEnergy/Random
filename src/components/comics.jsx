@@ -20,7 +20,7 @@ export default function ComicPanel(){
 
     return(
         <section className="comics">
-            <h3>Did i mention i also write comic books?</h3>
+            <h3 style={{color: "#38bdf8"}}>Did i mention i also write comic books?</h3>
             <p>I am a comic book author, i write comics, create characters</p>
              <p> and design the overall world, characters and setting.</p>
 
@@ -43,7 +43,7 @@ export default function ComicPanel(){
                     )
                 })}
             </div>
-            <h2 style={{color: "#18ce", margin: "10px"}}>Safe to say i am really cool</h2>
+            <h2 style={{color: "#38bdf8", margin: "10px"}}>Safe to say i am really cool</h2>
             <img src={kevin} alt="" className="kevin"/>
             <span>Okay, I love you bye 😘</span>
         </section>

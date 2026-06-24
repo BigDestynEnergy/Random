@@ -19,7 +19,7 @@ export default function Web(){
     ]
     return(
         <section className="web">
-            <h3 style={{color: "#18ce"}}>I use these languages by the way</h3>
+            <h3 style={{color: "#38bdf8"}}>I use these languages by the way</h3>
 
             <div className="skills">
                 {skills.map((skill, index) => {
