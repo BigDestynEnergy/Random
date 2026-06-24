@@ -1,0 +1,63 @@
+.comics h3{
+    color: #18ce;
+    margin-bottom: 1.2rem;
+}
+.comic-image{
+    height: 400px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.comics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comic-panels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card h2{
+    margin: 10px;
+}
+
+.card{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background: #38bdf826;
+    padding: 1rem 1.25rem;
+}
+
+.comic-link{
+    text-decoration: none;
+    background: linear-gradient(to bottom right, #18ce, #38bdf826);
+    width: 300px;
+    margin: 10px;
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: all .3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.comic-link:hover{
+    transform: translateY(-2px);
+}
+
+.kevin{
+    height: 500px;
+    border-radius: 16px;
+    cursor: pointer;
+}

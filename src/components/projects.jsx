@@ -6,7 +6,7 @@ export default function Projects(){
         {name: "Cafe Maju", link: "cafe-maju.vercel.app"},
         {name: "Destyns FX", link: "destyns-fx.vercel.app"},
         {name: "Ingenious", link: "ingenious-tasker.vercel.app"},
-        {name: "Encryptor", link: "encryptorui.netlify.app"},
+        {name: "Encryptor", link: "encryptorui.netlify.app"}
     ]
 
     return(
