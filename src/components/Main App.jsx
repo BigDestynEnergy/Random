@@ -11,6 +11,7 @@ import Projects from './projects'
 import { useState } from 'react'
 import ComicPanel from './comics'
 import Web from './Web'
+import Frameworks from './frameworks'
 
 export default function MainApp(){
     const links = [
@@ -78,6 +79,7 @@ export default function MainApp(){
 
             <Projects/>
             <Web/>
+            <Frameworks/>
             <ComicPanel/>
         </section>
     )

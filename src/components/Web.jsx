@@ -1,6 +1,6 @@
 import js from "../assets/javascript.svg"
 import css from "../assets/css.svg"
-import react from "../Images/react.svg"
+
 import html from "../assets/filetype-html.svg"
 import py from "../assets/filetype-py.svg"
 import tsx from "../assets/filetype-tsx.svg"
@@ -11,7 +11,6 @@ export default function Web(){
     const skills = [
        
         {name: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icon: js},
-        {name: "React", link: "https://reactjs.org/", icon: react},
         {name: "TypeScript", link: "https://www.typescriptlang.org/", icon: tsx},
         {name: "Python", link: "https://www.python.org/", icon: py},
          {name: "HTML", link: "https://developer.mozilla.org/en-US/docs/Web/HTML", icon: html},
