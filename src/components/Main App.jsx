@@ -33,7 +33,9 @@ export default function MainApp(){
                 <img src={des} alt="Des" onClick={()=>setModal(true)} className='img' />
                 <h2>Hey, My name is Destyn</h2>
                 <span>I wanted to subscribe for Linktree and display all my links,</span>
+                
                 <span>but i am a web developer so i made my own</span>
+                <i style={{color: "#ffffff6e"}}>Disclaimer: This is lowkey a portfolio</i>
             {modal && (
                 <div className="modal">
                     <span 
