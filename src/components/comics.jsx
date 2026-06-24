@@ -21,8 +21,8 @@ export default function ComicPanel(){
     return(
         <section className="comics">
             <h3 style={{color: "#38bdf8"}}>Did i mention i also write comic books?</h3>
-            <p>I am a comic book author, i write comics, create characters</p>
-             <p> and design the overall world, characters and setting.</p>
+            <p>I am a comic book author, i write comics, create,</p>
+             <p>design the overall world, characters and setting.</p>
 
             <div className="comic-panels"> 
                 {comics.map((comic, index) => {
