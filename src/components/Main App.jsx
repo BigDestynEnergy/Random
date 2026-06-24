@@ -7,6 +7,8 @@ import bolt from "../assets/lightning-fill.svg"
 import chat from "../assets/chat.svg"
 import sup from "../assets/whatsapp.svg"
 import './Styles.css'
+import Projects from './projects'
+import { useState } from 'react'
 
 export default function MainApp(){
     const links = [
@@ -17,13 +19,25 @@ export default function MainApp(){
         {name: "WhatsApp", link: "https://wa.me/265998833172", icon: sup},
         {name: "Twitter/X", link: "", icon: twitterx},
         {name: "Comics", link: "https://culturalcomics.ink/app/comic/20/", icon: bolt},
-    ]
+    ];
+
+    const [modal, setModal] = useState(false)
+
+
     return(
         <section>
             <header>
-                <img src={des} alt="" className='img' />
+                <img src={des} alt="Des" onClick={()=>setModal(true)} className='img' />
                 <h2>Hey, My name is Destyn</h2>
                 <span>I wanted to subscribe for Linktree and display all my links, <br /> but i am a web developer so i made my own</span>
+            {modal && (
+                <div className="modal">
+                    <span 
+                    onClick={()=>setModal(false)}
+                    className="close">close</span>
+                    <img src={des} alt="Des" />
+                </div>
+            )}
             </header>
 
             <div className="links">
@@ -56,9 +70,7 @@ export default function MainApp(){
                 </div>
             </div>
 
-            <div className="lower">
-                <h2>More coming soon</h2>
-            </div>
+            <Projects/>
         </section>
     )
 }

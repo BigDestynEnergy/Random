@@ -1,67 +1,213 @@
-.img{
-    height: 300px;
-    cursor: pointer;
-    transition: all .3s ease;
-    border-radius: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.img:hover{
-    transform: translateY(-2px);
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
 }
 
-header{
+section {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 10px 25px #38bdf866;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+header span {
+  display: block;
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.links {
+  margin-top: 2rem;
+}
+
+.links h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+.inner-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.25rem;
+  font-weight: 400;
+  border-radius: 16px;
+  background: #ffffff14;
+  transition: all 0.3s ease;
+  border: 1px solid #ffffff1f;
+}
+
+.link:hover {
+  background: #38bdf826;
+  border-color: #18ce;
+}
+
+.link img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
+.link span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Projects Section */
+
+.projects {
+  margin-top: 4rem;
+  
+}
+
+.project-links{
+display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.projects h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+}
+
+.project{
+  border: 2px solid #ffffff1f;
+  background: #ffffff14;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem 1.25rem;
+  transition: border-color .3s ease;
+  border-radius: 16px;
+}
+
+.project:hover{
+    border-color: #18ce;
+    background: #38bdf826;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  .img {
+    width: 110px;
+    height: 110px;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  header span {
+    font-size: 0.9rem;
+  }
+
+  .link {
+    padding: 0.9rem 1rem;
+  }
+}
+
+.modal{
+    position: fixed; inset: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
-.inner-links{
-    display: flex;
-    gap: 8px;
-}
-
-.links{
-    margin-top: 20px;
-}
-
-.inner-links img{
-    height: 30px;
-}
-
-a{
-    text-decoration: none;
-    color: #111;
+.modal img{
+    height: 600px;
     border-radius: 16px;
-    background: #999;
-    padding: 12px;
-    color: aliceblue;
-    border: 2px solid transparent;
-    transition: all .3s ease;
+    position: relative;
     cursor: pointer;
 }
 
-a:hover{
-    transform: translateY(-2px);
-    border-color: #18ce;
-}
-
-.link{
-    display: flex;
-    align-items: center;
-}
-
-.link span{
-    font-size: 1.3rem;
-}
-
-@media (max-width: 600px) {
-    .inner-links{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .link {
-        display: flex;
-        gap: 8px;
-    }
+.close{
+    background: #fff;
+    color: #111;
+    border-radius: 8px;
+    padding: 0.4rem 1.25rem;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
 }
