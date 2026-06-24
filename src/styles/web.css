@@ -16,13 +16,14 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 8px;
     margin-top: 2rem;
 }
 
 .skill{
     padding: 1rem 1.25rem;
     background: #ffffff14;
-    width: 400px;
+    width: 360px;
     border-radius: 16px;
     cursor: pointer;
     border: 1px solid #f1f1f150;
