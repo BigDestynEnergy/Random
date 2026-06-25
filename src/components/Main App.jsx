@@ -10,6 +10,7 @@ import './Styles.css'
 import Projects from './projects'
 import { useState } from 'react'
 import ComicPanel from './comics'
+import onlyfans from '../Images/of.svg'
 import Web from './Web'
 import Frameworks from './frameworks'
 
@@ -22,7 +23,8 @@ export default function MainApp(){
         {name: "Facebook", link: "https://www.facebook.com/profile.php?id=61557103982365&mibextid=ZbWKwL", icon: facebook},
         {name: "Instagram", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         
-        {name: "Twitter/X", link: "", icon: twitterx}
+        {name: "Twitter/X", link: "", icon: twitterx},
+        {name: "OnlyFans", link: "", icon: onlyfans}
     ];
 
     const [modal, setModal] = useState(false)
@@ -63,9 +65,12 @@ export default function MainApp(){
             rel={reference ? "noopener noreferrer" : undefined}
             className={`link ${!reference ? "disabled" : ""}`}
             onClick={(e) => {
-                if (!reference) {
+                if (link.name === "Twitter/X") {
                     e.preventDefault();
                     alert("No link available");
+                } else if(link.name === "OnlyFans"){
+                    e.preventDefault();
+                    alert("You dirty animal! Nothing to see here");
                 }
             }}
         >

@@ -3,12 +3,16 @@ import mc from "../Images/mclean.jpg"
 import "./comics.css"
 import tera from "../Images/tera.jpg"
 import kevin from "../Images/kevin.webp"
+import { useRef } from "react"
+
+
 export default function ComicPanel(){
 
+    const kelRef = useRef()
     const comics = [
         {name: "Fine Wine",
              bio: "Following a drought, a local wine brewer embarks on a journey to appease the rain god to bring forth rain but his journey proves perilous.", 
-             link: "culturalcomics.ink", 
+             link: "culturalcomics.ink/app/comic/16", 
              image: fine, status: true},
         {name: "The Insignificants",
              bio: "A man finds himself entangled in a mysterious supernatural event where everyone around him has forgotten him.", 
@@ -44,8 +48,14 @@ export default function ComicPanel(){
                 })}
             </div>
             <h2 style={{color: "#38bdf8", margin: "10px"}}>Safe to say i am really cool</h2>
-            <img src={kevin} alt="" className="kevin"/>
+            <img src={kevin}
+            title="click to download"
+            onClick={()=>{kelRef.current?.click()}}
+            alt="" className="kevin"/>
             <span>Okay, I love you bye 😘</span>
+            <a href="#"
+            ref={kelRef}
+            download={kevin} style={{display: "none"}}>image</a>
         </section>
     )
 }
