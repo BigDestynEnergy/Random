@@ -13,10 +13,10 @@ import ComicPanel from './comics'
 import onlyfans from '../Images/of.svg'
 import Web from './Web'
 import Frameworks from './frameworks'
+import It from "../components/IT"
 
 export default function MainApp(){
     const links = [
-        {name: "WhatsApp ads & collabs", link: "https://wa.me/265881700140", icon: sup},
         {name: "Email", link: "dukedestin34@gmail.com", icon: chat},
         {name: "TikTok", link: "https://www.tiktok.com/@tsogollo?_r=1&_t=ZS-97RpeX1eQdA", icon: tiktok},
         
@@ -51,7 +51,7 @@ export default function MainApp(){
             </header>
 
             <div className="links">
-                <h3>Find me on:</h3>
+                <h3>For collabs or Inquiries find me on:</h3>
                 <div className="inner-links">
                    {links.map((link, index) => {
     const reference = link.link.includes("@gmail.com")
@@ -82,7 +82,7 @@ export default function MainApp(){
 })}
                 </div>
             </div>
-
+            <It/>
             <Projects/>
             <Web/>
             <Frameworks/>
