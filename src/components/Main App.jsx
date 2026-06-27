@@ -67,10 +67,7 @@ export default function MainApp(){
             rel={reference ? "noopener noreferrer" : undefined}
             className={`link ${!reference ? "disabled" : ""}`}
             onClick={(e) => {
-                if (link.name === "Twitter/X") {
-                    e.preventDefault();
-                    alert("No link available");
-                } else if(link.name === "OnlyFans"){
+                if(link.name === "OnlyFans"){
                     e.preventDefault();
                     alert("You dirty animal! Nothing to see here");
                 }
