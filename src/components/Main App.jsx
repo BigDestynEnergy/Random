@@ -24,7 +24,7 @@ export default function MainApp(){
         {name: "Instagram | Personal", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         {name: "Instagram | Content", link: "https://www.instagram.com/ankoloakumalawi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         
-        {name: "Twitter/X", link: "https://x.com/dessttyyn", icon: twitterx},
+        {name: "Twitter/X", link: "https://x.com/tsogollo", icon: twitterx},
         {name: "OnlyFans", link: "", icon: onlyfans}
     ];
 
