@@ -16,12 +16,13 @@ import Frameworks from './frameworks'
 
 export default function MainApp(){
     const links = [
-        {name: "WhatsApp", link: "https://wa.me/265881700140", icon: sup},
+        {name: "WhatsApp ads & collabs", link: "https://wa.me/265881700140", icon: sup},
         {name: "Email", link: "dukedestin34@gmail.com", icon: chat},
         {name: "TikTok", link: "https://www.tiktok.com/@tsogollo?_r=1&_t=ZS-97RpeX1eQdA", icon: tiktok},
         
         {name: "Facebook", link: "https://www.facebook.com/profile.php?id=61557103982365&mibextid=ZbWKwL", icon: facebook},
-        {name: "Instagram", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
+        {name: "Instagram | Personal", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
+        {name: "Instagram | Content", link: "https://www.instagram.com/ankoloakumalawi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         
         {name: "Twitter/X", link: "", icon: twitterx},
         {name: "OnlyFans", link: "", icon: onlyfans}

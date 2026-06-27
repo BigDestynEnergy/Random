@@ -49,7 +49,7 @@ export default function ComicPanel(){
             </div>
             <h2 style={{color: "#38bdf8", margin: "10px"}}>Safe to say i am really cool</h2>
             <img src={kevin}
-            title="click to download"
+            title="click to download this cool image"
             onClick={()=>{kelRef.current?.click()}}
             alt="" className="kevin"/>
             <span>Okay, I love you bye 😘</span>
