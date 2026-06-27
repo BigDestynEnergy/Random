@@ -24,7 +24,7 @@ export default function MainApp(){
         {name: "Instagram | Personal", link: "https://www.instagram.com/koma.destyn.adha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         {name: "Instagram | Content", link: "https://www.instagram.com/ankoloakumalawi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: instagram},
         
-        {name: "Twitter/X", link: "", icon: twitterx},
+        {name: "Twitter/X", link: "https://x.com/dessttyyn", icon: twitterx},
         {name: "OnlyFans", link: "", icon: onlyfans}
     ];
 
@@ -39,7 +39,8 @@ export default function MainApp(){
                 <span>I wanted to subscribe for Linktree and display all my links,</span>
                 
                 <span>but i am a web developer so i made my own</span>
-                <i style={{color: "#ffffff6e"}}>Disclaimer: This is lowkey a portfolio (oo0ps!)</i>
+                <i style={{color: "#ffffff6e"}}>Disclaimer: This is lowkey a portfolio (oops!)</i>
+                <i style={{color: "#ffffff6e"}}>sorry not sorry</i>
             {modal && (
                 <div className="modal">
                     <span 
